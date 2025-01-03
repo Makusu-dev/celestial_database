@@ -30,3 +30,10 @@ __vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
 trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 psql --username=freecodecamp --dbnam=postgres
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+git remote set-url origin https://github.com/Makusu-dev/celestial_database.git
+git branch -M main
+git push -u origin main
+git checkout -b
+git checkout -b main
+git checkout -b final
